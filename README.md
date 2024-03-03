@@ -1,79 +1,62 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Donation App
 
-# Getting Started
+Welcome to the Donation App repository, an open-source project aimed at facilitating and streamlining the process of making donations to various causes and organizations. Built with React Native, this mobile application offers a user-friendly interface and secure donation process, ensuring a seamless experience for users looking to contribute to their favorite causes.
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+## Features
 
-## Step 1: Start the Metro Server
+- **React Native Framework**: Utilizes React Native for cross-platform mobile app development, ensuring a consistent user experience across iOS and Android devices.
+- **State Management with Redux**: Implements Redux for efficient state management, making the app highly responsive and fast.
+- **Navigation**: Integrated with React Navigation for a smooth and intuitive navigation experience throughout the app.
+- **Firebase Authentication**: Incorporates Firebase Authentication to secure user accounts and protect personal information, providing a safe platform for users to make donations.
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+## Getting Started
 
-To start Metro, run the following command from the _root_ of your React Native project:
+To get a local copy up and running follow these simple steps.
 
-```bash
-# using npm
-npm start
+### Prerequisites
 
-# OR using Yarn
-yarn start
-```
+- Node.js
+- npm or Yarn
+- A Firebase project for authentication and database services
 
-## Step 2: Start your Application
+### Installation
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
-
-### For Android
-
-```bash
-# using npm
-npm run android
-
-# OR using Yarn
-yarn android
-```
-
-### For iOS
+1. **Clone the repository**
 
 ```bash
-# using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
+git clone https://github.com/your-username/donation-app.git
 ```
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+2. **Navigate to the project directory**
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+```bash
+cd donation-app
+```
 
-## Step 3: Modifying your App
+3. **Install dependencies**
 
-Now that you have successfully run the app, let's modify it.
+With npm:
 
-1. Open `App.js` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+```bash
+npm install
+```
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+With Yarn:
 
-## Congratulations! :tada:
+```bash
+yarn install
+```
 
-You've successfully run and modified your React Native App. :partying_face:
+4. **Set up Firebase**
 
-### Now what?
+- Create a Firebase project in the Firebase console.
+- Enable Firebase Authentication in your Firebase project.
+- Add your Firebase project's configuration to a `.env` file in the root of your project, following the `.env.example` template provided.
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
+5. **Start the application**
 
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+```bash
+npx react-native run-android
+# or
+npx react-native run-ios
+```
